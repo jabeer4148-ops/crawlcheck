@@ -4,3 +4,5 @@ crawlcheck-report.html
 *.tar.gz
 results.json
 test-out.json
+docs/demo-output.txt
+docs/.demo-frames/

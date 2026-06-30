@@ -12,7 +12,9 @@
   "scripts": {
     "start": "node src/cli.js",
     "test": "node test/run.mjs",
-    "sample-report": "node test/generate-sample.mjs"
+    "sample-report": "node test/generate-sample.mjs",
+    "demo-gif": "node scripts/render-demo-gif.mjs",
+    "report-screenshot": "node scripts/capture-report-screenshot.mjs"
   },
   "keywords": [
     "testing",

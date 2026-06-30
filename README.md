@@ -12,13 +12,11 @@ npx crawlcheck https://example.com
 
 One command. HTML report. No config file.
 
-> **Before publishing:** record `docs/demo.gif` (CLI run) and `docs/report.png` (report screenshot) yourself — those two assets are the last README blocker. Paths are referenced below but the files are not included yet.
-
 ![demo](docs/demo.gif)
 
 ![report](docs/report.png)
 
-See a real report generated from the test fixture: [docs/sample-report.html](docs/sample-report.html).
+See a full interactive example: [docs/sample-report.html](docs/sample-report.html).
 
 ## What it catches
 
