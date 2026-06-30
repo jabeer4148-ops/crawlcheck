@@ -1,0 +1,6 @@
+node_modules/
+crawlcheck-report.html
+*.tgz
+*.tar.gz
+results.json
+test-out.json

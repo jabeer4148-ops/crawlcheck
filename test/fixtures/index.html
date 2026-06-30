@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>crawlcheck fixture site</title>
+  <script>
+    console.error("fixture: first-party console error");
+    queueMicrotask(() => { throw new Error("fixture: uncaught exception"); });
+  </script>
+  <script src="https://third-party-fixture.invalid/tracker.js"></script>
+</head>
+<body>
+  <h1>Fixture homepage</h1>
+  <img src="/missing-image.png" width="1" height="1">
+  <p><a href="/missing-page.html">Broken internal link</a></p>
+  <p><a href="/page2.html">Working second page</a></p>
+</body>
+</html>

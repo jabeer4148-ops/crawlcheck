@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>crawlcheck report — http://127.0.0.1:56756</title>
+<style>
+  :root { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  body { margin: 0; background: #f8fafc; color: #1e293b; }
+  header { background: #0f172a; color: #fff; padding: 28px 32px; }
+  header h1 { margin: 0 0 4px; font-size: 20px; letter-spacing: -0.01em; }
+  header .target { color: #94a3b8; font-size: 14px; word-break: break-all; }
+  .status { display: inline-block; margin-top: 14px; padding: 6px 14px; border-radius: 999px; font-weight: 700; font-size: 13px; color: #fff; background: #b91c1c; }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 24px 16px 64px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px; margin: 24px 0; }
+  .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px; text-align: center; }
+  .card .n { font-size: 26px; font-weight: 700; }
+  .card .l { font-size: 12px; color: #64748b; margin-top: 4px; }
+  .card.advisory .n { color: #a16207; }
+  .card.note { grid-column: 1 / -1; text-align: left; padding: 12px 16px; font-size: 13px; color: #64748b; }
+  details.page { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; margin-bottom: 10px; padding: 4px 14px; }
+  details.page.clean { opacity: 0.7; }
+  summary { cursor: pointer; display: flex; align-items: center; gap: 10px; padding: 10px 0; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  .dot { width: 9px; height: 9px; border-radius: 50%; flex: none; }
+  .url { font-size: 14px; word-break: break-all; flex: 1; }
+  .count { font-size: 12px; color: #64748b; flex: none; }
+  .issue-group { margin: 4px 0 12px; }
+  .group-title { margin: 0 0 6px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: #64748b; }
+  details.third-party-group { margin: 8px 0 12px; padding: 8px 12px; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; }
+  details.third-party-group summary { padding: 4px 0; font-size: 13px; color: #64748b; font-weight: 600; }
+  ul { margin: 4px 0 12px; padding-left: 22px; }
+  li { margin: 6px 0; font-size: 13px; line-height: 1.5; }
+  li.err { color: #b91c1c; } li.req { color: #c2410c; } li.link { color: #7c3aed; } li.a11y { color: #1e293b; }
+  code { background: #f1f5f9; padding: 1px 5px; border-radius: 4px; font-size: 12px; word-break: break-all; }
+  .badge { color: #fff; font-size: 11px; padding: 1px 7px; border-radius: 999px; margin-right: 4px; }
+  .ok { color: #15803d; font-size: 13px; margin: 4px 0 12px; }
+  footer { text-align: center; color: #94a3b8; font-size: 12px; padding: 24px; }
+  a { color: #2563eb; }
+</style></head>
+<body>
+  <header>
+    <h1>🔍 crawlcheck report</h1>
+    <div class="target">http://127.0.0.1:56756</div>
+    <div class="status">ISSUES FOUND</div>
+  </header>
+  <div class="wrap">
+    <div class="cards">
+      <div class="card"><div class="n">2</div><div class="l">Pages crawled</div></div>
+      <div class="card"><div class="n">4</div><div class="l">JS errors (yours)</div></div>
+      <div class="card"><div class="n">2</div><div class="l">Failed requests (yours)</div></div>
+      <div class="card"><div class="n">1</div><div class="l">Broken links</div></div>
+      <div class="card advisory"><div class="n">8</div><div class="l">A11y (advisory)</div></div>
+      <div class="card note">Third-party issues excluded from counts above: 2 (expand per-page sections to view)</div>
+    </div>
+    
+      <details open class="page ">
+        <summary>
+          <span class="dot" style="background:#b91c1c"></span>
+          <span class="url">http://127.0.0.1:56756</span>
+          <span class="count">5 issues</span>
+        </summary>
+        <div class="issue-group"><h4 class="group-title">Your issues</h4><ul><li class="err">Uncaught exception: <code>fixture: uncaught exception</code></li><li class="err">Console error: <code>Failed to load resource: the server responded with a status of 404 (Not Found)</code></li><li class="err">Console error: <code>fixture: first-party console error</code></li><li class="req">Failed request (HTTP 404): <code>http://127.0.0.1:56756/missing-image.png</code></li><li class="link">Broken link (HTTP 404): <code>http://127.0.0.1:56756/missing-page.html</code></li><li class="a11y"><span class="badge" style="background:#b91c1c">critical</span> Images must have alternative text (1 node) — <a href="https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright" target="_blank">learn more</a></li><li class="a11y"><span class="badge" style="background:#a16207">moderate</span> Document should have one main landmark (1 node) — <a href="https://dequeuniversity.com/rules/axe/4.12/landmark-one-main?application=playwright" target="_blank">learn more</a></li><li class="a11y"><span class="badge" style="background:#a16207">moderate</span> All page content should be contained by landmarks (4 nodes) — <a href="https://dequeuniversity.com/rules/axe/4.12/region?application=playwright" target="_blank">learn more</a></li></ul></div>
+          <details class="third-party-group">
+            <summary>Third-party / external (2)</summary>
+            <ul><li class="err">Console error: <code>Failed to load resource: net::ERR_NAME_NOT_RESOLVED</code></li><li class="req">Failed request (net::ERR_NAME_NOT_RESOLVED): <code>https://third-party-fixture.invalid/tracker.js</code></li></ul>
+          </details>
+      </details>
+      <details open class="page ">
+        <summary>
+          <span class="dot" style="background:#b91c1c"></span>
+          <span class="url">http://127.0.0.1:56756/missing-page.html</span>
+          <span class="count">2 issues</span>
+        </summary>
+        <div class="issue-group"><h4 class="group-title">Your issues</h4><ul><li class="err">Console error: <code>Failed to load resource: the server responded with a status of 404 (Not Found)</code></li><li class="req">Failed request (HTTP 404): <code>http://127.0.0.1:56756/missing-page.html</code></li><li class="a11y"><span class="badge" style="background:#c2410c">serious</span> Documents must have &lt;title&gt; element to aid in navigation (1 node) — <a href="https://dequeuniversity.com/rules/axe/4.12/document-title?application=playwright" target="_blank">learn more</a></li><li class="a11y"><span class="badge" style="background:#c2410c">serious</span> &lt;html&gt; element must have a lang attribute (1 node) — <a href="https://dequeuniversity.com/rules/axe/4.12/html-has-lang?application=playwright" target="_blank">learn more</a></li><li class="a11y"><span class="badge" style="background:#a16207">moderate</span> Document should have one main landmark (1 node) — <a href="https://dequeuniversity.com/rules/axe/4.12/landmark-one-main?application=playwright" target="_blank">learn more</a></li><li class="a11y"><span class="badge" style="background:#a16207">moderate</span> Page should contain a level-one heading (1 node) — <a href="https://dequeuniversity.com/rules/axe/4.12/page-has-heading-one?application=playwright" target="_blank">learn more</a></li><li class="a11y"><span class="badge" style="background:#a16207">moderate</span> All page content should be contained by landmarks (1 node) — <a href="https://dequeuniversity.com/rules/axe/4.12/region?application=playwright" target="_blank">learn more</a></li></ul></div>
+      </details>
+  </div>
+  <footer>Generated by crawlcheck · 2026-06-29T16:04:21.447Z</footer>
+</body></html>

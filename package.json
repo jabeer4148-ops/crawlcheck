@@ -1,0 +1,37 @@
+{
+  "name": "crawlcheck",
+  "version": "0.1.0",
+  "description": "Crawl any website and catch JS errors, broken links, failed requests, and accessibility violations — one command, zero config.",
+  "type": "module",
+  "bin": {
+    "crawlcheck": "./src/cli.js"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node test/run.mjs",
+    "sample-report": "node test/generate-sample.mjs"
+  },
+  "keywords": [
+    "testing",
+    "crawler",
+    "accessibility",
+    "a11y",
+    "axe",
+    "playwright",
+    "broken-links",
+    "qa",
+    "website-checker"
+  ],
+  "author": "Jabeer.4148@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "@axe-core/playwright": "^4.10.0",
+    "playwright": "^1.48.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
