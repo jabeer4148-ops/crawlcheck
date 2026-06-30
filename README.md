@@ -1,6 +1,6 @@
 # crawlcheck
 
-![CI](https://github.com/jabeer4148-ops/crawlcheck-/actions/workflows/test.yml/badge.svg)
+![CI](https://github.com/jabeer4148-ops/crawlcheck/actions/workflows/test.yml/badge.svg)
 
 **Catch what's actually your fault — not third-party noise.**
 
