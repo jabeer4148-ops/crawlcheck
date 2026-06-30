@@ -4,7 +4,7 @@
   "description": "Crawl any website and catch JS errors, broken links, failed requests, and accessibility violations — one command, zero config.",
   "type": "module",
   "bin": {
-    "crawlcheck": "./src/cli.js"
+    "crawlcheck": "src/cli.js"
   },
   "files": [
     "src"
