@@ -29,6 +29,14 @@
   ],
   "author": "Jabeer.4148@gmail.com",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jabeer4148-ops/crawlcheck.git"
+  },
+  "homepage": "https://github.com/jabeer4148-ops/crawlcheck#readme",
+  "bugs": {
+    "url": "https://github.com/jabeer4148-ops/crawlcheck/issues"
+  },
   "dependencies": {
     "@axe-core/playwright": "^4.10.0",
     "playwright": "^1.48.0"
